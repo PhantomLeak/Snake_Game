@@ -13,7 +13,7 @@ use rand::Rng;
 
 const MAX_INTERVAL: u16 = 700;
 const MIN_INTERVAL: u16 = 200;
-const MAX_SPEED: u16 = 20;
+const MAX_SPEED: u16 = 60;
 
 #[derive(Debug)]
 pub struct Game {
@@ -93,9 +93,9 @@ impl Game {
                         self.place_food();
                         self.score += 1;
 
-                        if self.score % ((self.width & self.height) / MAX_SPEED) == 0 {
+                        if self.score % ((self.width * self.height) / MAX_SPEED) == 0 {
                             self.speed += 1;
-                        } 
+                        }
                     }
                 }
 
