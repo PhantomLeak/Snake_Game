@@ -1,2 +1,2 @@
 # Snake_Game
-Snake Game Written In Rust
+A take on the snake game (from 1997) rewritten in Rust. 
