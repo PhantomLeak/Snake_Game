@@ -30,7 +30,7 @@ impl Point {
 
     fn transform_value(value: u16, by: i16) -> u16 {
         // If 'by' is negative or is greater than the value being modified
-        if (by.is_negative() && by.abs() as u16 > value) {
+        if by.is_negative() && by.abs() as u16 > value {
             panic!("Transforming value {} by {} would result in a negative number", value, by);
         } else {
             // Return the transformed value as a u16

@@ -6,7 +6,7 @@ use crossterm::{ExecutableCommand};
 use crossterm::terminal::{Clear, ClearType, size, SetSize, enable_raw_mode, disable_raw_mode};
 use crossterm::style::{SetForegroundColor, Print, ResetColor, Color};
 use std::time::{Duration, Instant};
-use crossterm::cursor::{Show, MoveTo, Hide};
+use crossterm::cursor::{MoveTo, Hide};
 use crossterm::event::{poll, read, Event, KeyCode, KeyModifiers, KeyEvent};
 use crate::command::Command;
 use rand::Rng;
